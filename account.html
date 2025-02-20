@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="container account-container">
+        <h1>My Account</h1>
+        <div class="account-card">
+            <div class="account-info">
+                <div class="account-number">
+                    <span id="accountNumber">EPOS №1228114</span>
+                </div>
+                <div class="balance-section">
+                    <div class="balance">
+                        <span id="balance">0.00 $</span>
+                        <span class="currency">USD ($)</span>
+                    </div>
+                    <div class="refresh-button">
+                        <span id="refreshButton"><i class="fa-solid fa-rotate"></i></span>
+                    </div>
+                </div>
+                <div class="limit-section">
+                    <span class="label">Limit</span>
+                    <span id="limit" class="value">Loading...</span>
+                </div>
+                <div class="address-section">
+                    <span class="label">Address</span>
+                    <span id="address" class="value">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button id="topupButton" class="action-button topup">
+                <span><i class="fa-solid fa-wallet"></i></span>
+                Top up account
+            </button>
+            <button id="withdrawButton" class="action-button withdraw">
+                <span><i class="fa-solid fa-wallet"></i></span>
+                Withdraw funds
+            </button>
+        </div>
+        <button id="logoutButton" class="logout-button">
+            <span><i class="fa-solid fa-right-from-bracket"></i></span>
+            Log out
+        </button>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Account Script -->
+    <script src="account.js"></script>
+</body>
+</html>

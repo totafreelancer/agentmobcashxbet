@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="coupon.png" alt="Logo">
+        </div>
+        <h1>Welcome</h1>
+        <div class="login-form">
+            <div class="form-group">
+                <input type="text" id="userId" placeholder="User ID" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="workplaceCode" placeholder="Workplace code" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="rememberPassword">
+                <label for="rememberPassword">Remember password</label>
+            </div>
+            <button id="loginButton">Log in</button>
+            <div class="hire-agent">
+                <a href="https://t.me/Retail1x_Andrey" target="_blank">Want to hire an agent?</a>
+            </div>
+        </div>
+    </div>
+    <div id="errorMessage" class="error-message"></div>
+
+    <!-- Firebase SDK (V8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- আপনার script.js ফাইল লোড করা -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
