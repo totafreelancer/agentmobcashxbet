@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Firebase Configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyC_yRDtcrMLSEQ9qITgD_FME5ALAZ5sD_k",
-        authDomain: "agentmobcashxbet.firebaseapp.com",
-        projectId: "agentmobcashxbet",
-        storageBucket: "agentmobcashxbet.firebasestorage.app",
-        messagingSenderId: "264158818770",
-        appId: "1:264158818770:web:1b02ffdad13706b59b180b"
-    };
+        apiKey: "AIzaSyBCebnAtZZ9XWzReHXN4s-kB9dLhL9ulw8",
+        authDomain: "agent-mobcash-xbet.firebaseapp.com",
+        projectId: "agent-mobcash-xbet",
+        storageBucket: "agent-mobcash-xbet.firebasestorage.app",
+        messagingSenderId: "347151266255",
+        appId: "1:347151266255:web:740847f8d124f4cb9fe2ba"
+      };
+      
 
     // Initialize Firebase (V8 Syntax)
     firebase.initializeApp(firebaseConfig);
